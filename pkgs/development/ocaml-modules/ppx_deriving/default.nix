@@ -15,6 +15,7 @@ buildDunePackage rec {
   propagatedBuildInputs = [ ocaml-migrate-parsetree ppx_derivers ppx_tools result ];
 
   doCheck = true;
+  useDune2 = true;
 
   meta = with lib; {
     description = "deriving is a library simplifying type-driven code generation on OCaml >=4.02.";
